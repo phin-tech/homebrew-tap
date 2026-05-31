@@ -10,6 +10,8 @@ class Roux < Formula
   depends_on "rust" => :build
   depends_on "openssl@3"
 
+  conflicts_with "roux-pre", because: "both install the roux executable"
+
   def install
     ENV["OPENSSL_DIR"] = Formula["openssl@3"].opt_prefix
     system "cargo", "install", *std_cargo_args(path: "crates/roux-cli")

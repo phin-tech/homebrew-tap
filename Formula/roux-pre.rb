@@ -2,7 +2,6 @@ class RouxPre < Formula
   desc "Command-line client and daemon entrypoint for Roux"
   homepage "https://github.com/phin-tech/roux"
   url "https://github.com/phin-tech/roux/archive/refs/tags/v0.5.4-pre.12.tar.gz"
-  version "0.5.4-pre.12"
   sha256 "fdbab4819bd56575093a02ed22924b505ac0b466a5b3eecbfcfa9670859125e8"
   license "MIT"
   head "https://github.com/phin-tech/roux.git", branch: "main"
