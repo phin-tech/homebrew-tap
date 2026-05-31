@@ -1,20 +1,32 @@
 class RouxPre < Formula
   desc "Command-line client and daemon entrypoint for Roux"
   homepage "https://github.com/phin-tech/roux"
-  url "https://github.com/phin-tech/roux/archive/refs/tags/v0.5.4-pre.12.tar.gz"
-  sha256 "fdbab4819bd56575093a02ed22924b505ac0b466a5b3eecbfcfa9670859125e8"
+  version "0.5.4-pre.15"
   license "MIT"
-  head "https://github.com/phin-tech/roux.git", branch: "main"
 
-  depends_on "pkgconf" => :build
-  depends_on "rust" => :build
-  depends_on "openssl@3"
+  on_macos do
+    on_arm do
+      url "https://github.com/phin-tech/roux/releases/download/v#{version}/roux-aarch64-apple-darwin.tar.gz"
+      sha256 "d82d2a3d64d63cb75b632121fde38ed212096b3a0b954472be9aae30f5448bd3"
+    end
+
+    on_intel do
+      url "https://github.com/phin-tech/roux/releases/download/v#{version}/roux-x86_64-apple-darwin.tar.gz"
+      sha256 "c2c32a9ada86dc63a462a6e846ebc528d3e72921439be3eec6f5d7cd0d850db0"
+    end
+  end
+
+  on_linux do
+    on_intel do
+      url "https://github.com/phin-tech/roux/releases/download/v#{version}/roux-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2f4749cacc6b4fc396f684b9aaa9462ad80103154aca37e9ecd4dd77c94dd05f"
+    end
+  end
 
   conflicts_with "roux", because: "both install the roux executable"
 
   def install
-    ENV["OPENSSL_DIR"] = Formula["openssl@3"].opt_prefix
-    system "cargo", "install", *std_cargo_args(path: "crates/roux-cli")
+    bin.install "roux"
   end
 
   test do
