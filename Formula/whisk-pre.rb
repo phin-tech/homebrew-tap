@@ -15,6 +15,6 @@ class WhiskPre < Formula
   end
 
   test do
-    assert_match "whisk #{version}", shell_output("#{bin}/whisk version")
+    assert_match "refusing non-loopback bind", shell_output("#{bin}/whisk daemon run -addr 0.0.0.0:8787 2>&1", 1)
   end
 end
