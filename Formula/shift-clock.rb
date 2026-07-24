@@ -2,28 +2,28 @@
 class ShiftClock < Formula
   desc "Local, language-agnostic durable workflow orchestrator"
   homepage "https://github.com/phin-tech/shift-clock"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/phin-tech/shift-clock/releases/download/v0.1.1/shift-clock-v0.1.1-aarch64-apple-darwin.tar.gz"
-      sha256 "59394f390396a4ef4cc67b6178e4db4390540adfcf9641f6100d099ba0b2a693"
+      url "https://github.com/phin-tech/shift-clock/releases/download/v0.2.0/shift-clock-v0.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "c10dffb6287233ef791dfcc4c8a9f449dd3faf3b8b59b131c0db1b1a771c2530"
     end
     on_intel do
-      url "https://github.com/phin-tech/shift-clock/releases/download/v0.1.1/shift-clock-v0.1.1-x86_64-apple-darwin.tar.gz"
-      sha256 "3cbb32acb596dccd11cdff7255ba1c3336a89af35695380c7cb509fbf7e5ebe7"
+      url "https://github.com/phin-tech/shift-clock/releases/download/v0.2.0/shift-clock-v0.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "4dcbd6ca85365c31e91133210cd56fb43ffe128e1cdab34135affa343d29d82f"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/phin-tech/shift-clock/releases/download/v0.1.1/shift-clock-v0.1.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "4bbf112a1a4ee6b6d31a4ceba537bc9fb10fb5c0bc04fb5302cfb7b9e76f8cdb"
+      url "https://github.com/phin-tech/shift-clock/releases/download/v0.2.0/shift-clock-v0.2.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "547ad2060f6b45a3e651ddddb3cbbba9f7e4feab886d582353909ccdc38ce6e2"
     end
     on_intel do
-      url "https://github.com/phin-tech/shift-clock/releases/download/v0.1.1/shift-clock-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a9e8e0b67ee8e301bea6a623848b872d61dd8e20002ed91088da129f37363789"
+      url "https://github.com/phin-tech/shift-clock/releases/download/v0.2.0/shift-clock-v0.2.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c0eb6ce1a960b65ddd9c00a64d7f7cf2360a166d271e9300d91d6bc4cc55736a"
     end
   end
 
