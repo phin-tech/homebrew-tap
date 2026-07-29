@@ -2,28 +2,28 @@
 class Backspace < Formula
   desc "Flags comment blocks that have outgrown the code they describe"
   homepage "https://github.com/phin-tech/ill-be-backspace"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/phin-tech/ill-be-backspace/releases/download/v0.1.1/backspace-aarch64-apple-darwin.tar.gz"
-      sha256 "505e2ab556d0a98b1f122529a768125933493c757df30e11c309a812d7e40cdd"
+      url "https://github.com/phin-tech/ill-be-backspace/releases/download/v0.1.2/backspace-aarch64-apple-darwin.tar.gz"
+      sha256 "a9d7dc6cbc2ff136ccf8665f80dae0e939917b49e2c310b454c3446f12da607d"
     end
     on_intel do
-      url "https://github.com/phin-tech/ill-be-backspace/releases/download/v0.1.1/backspace-x86_64-apple-darwin.tar.gz"
-      sha256 "9407c6b4f5e28e8a73e46af719a4b9bb9385e7af5367cea2e05dc3b805ddbbe2"
+      url "https://github.com/phin-tech/ill-be-backspace/releases/download/v0.1.2/backspace-x86_64-apple-darwin.tar.gz"
+      sha256 "f7e050b16bd11d3f4ec69b35548f8deb02a5b9413d59f6fbb6b3f436385d8f51"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/phin-tech/ill-be-backspace/releases/download/v0.1.1/backspace-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7d18213ba351d85a6bd83943b755f559795fe00c0889a76bb46dc7ec07406109"
+      url "https://github.com/phin-tech/ill-be-backspace/releases/download/v0.1.2/backspace-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "fb9c3a0ae01f40956981fafbb429492d75327993a4267a9003819c322bf91faa"
     end
     on_intel do
-      url "https://github.com/phin-tech/ill-be-backspace/releases/download/v0.1.1/backspace-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3b0d1c12c1a4e2e8115daf0cd6851b5131c5a1d1ee25d84f1006379dfbe3eefb"
+      url "https://github.com/phin-tech/ill-be-backspace/releases/download/v0.1.2/backspace-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2cf54a173516f0dc878c55b25d044c20b6a1980f0f64d97939792a3ee896cbc4"
     end
   end
 
