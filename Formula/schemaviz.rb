@@ -2,28 +2,28 @@
 class Schemaviz < Formula
   desc "Draw a database schema, and what a migration changed, as an interactive page"
   homepage "https://github.com/phin-tech/skills/tree/main/skills/schemaviz"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/phin-tech/skills/releases/download/schemaviz-v#{version}/schemaviz-darwin-arm64"
-      sha256 "656c6bde26e9ba8f087dde58c51af0f4575660f929f9b94f078c9ada378849fd"
+      sha256 "4ef5e0b05ab205d469a5db8c9fbf6550715fdfeb68447931531588c16764935c"
     end
     on_intel do
       url "https://github.com/phin-tech/skills/releases/download/schemaviz-v#{version}/schemaviz-darwin-x64"
-      sha256 "efe7ec6f76e02683ebfb157cefb3f517d6ad9d10132a2e54d27e5f36ed29868b"
+      sha256 "167a161cec5d831ea425f2e42663b87e6b856fb1987fecf6bf01ebef433e4078"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/phin-tech/skills/releases/download/schemaviz-v#{version}/schemaviz-linux-arm64"
-      sha256 "c54e34dcddc3889bd943f44d5ba8febe881600adb3e58c6afd9cf273415883fb"
+      sha256 "f1f7876cd218e18a632f775f8a826ee9be7f34f56246fe4fb3983f8f2c01144c"
     end
     on_intel do
       url "https://github.com/phin-tech/skills/releases/download/schemaviz-v#{version}/schemaviz-linux-x64"
-      sha256 "4318d455ed82ec0418a609199b261273f13af3f487cc2669c080495d5c5059fd"
+      sha256 "89d547f3a5557457314d785106e913607203b7ed3dc38fa5ed9b03e5982b8d88"
     end
   end
 
