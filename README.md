@@ -51,3 +51,14 @@ brew install --cask phin-tech/tap/roux-pre
 ```
 
 The Roux desktop casks currently require Apple Silicon.
+
+## Schemaviz
+
+Draw a database schema, and what a migration changed, as an interactive page:
+
+```sh
+brew install phin-tech/tap/schemaviz
+schemaviz doctor
+```
+
+The formula installs the release binary from [phin-tech/skills](https://github.com/phin-tech/skills/tree/main/skills/schemaviz); no Python needed.
