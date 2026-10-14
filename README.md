@@ -62,3 +62,14 @@ schemaviz doctor
 ```
 
 The formula installs the release binary from [phin-tech/skills](https://github.com/phin-tech/skills/tree/main/skills/schemaviz); no Python needed.
+
+## Dottie
+
+Hand-drawn style diagrams for macOS that AI agents can draw over MCP. Installs the app and the `dottie`
+command:
+
+```sh
+brew install --cask phin-tech/tap/dottie
+```
+
+Update with `brew upgrade --cask dottie`; Dottie tells you when a new version is out.
