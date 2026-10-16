@@ -1,6 +1,6 @@
 cask "dottie" do
-  version "0.2.0"
-  sha256 "bcd48b0d7a1849a48a981f4504d89f3f86fbbb3ae44c779ee67b61582fa45db8"
+  version "0.3.0"
+  sha256 "29cb1d4cfb26b4979cba981f15dcddf1db66097ddecba5acdcfe37c24d3e0482"
 
   url "https://github.com/phin-tech/dottie/releases/download/v#{version}/Dottie-#{version}.zip"
   name "Dottie"
