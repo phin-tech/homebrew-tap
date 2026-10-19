@@ -1,38 +1,42 @@
 class Barnyard < Formula
-  desc "Sandbox wrapper for PiG using the nono CLI"
+  desc "Build signed, sandboxed PiG agents with nono"
   homepage "https://git.phin.tech/sam/barnyard"
   url "https://git.phin.tech/sam/barnyard.git",
       using:    :git,
-      revision: "ca8b524aea21667cec87df190de4a4cd5d57168f"
+      revision: "83a3dd40231ade37a245fd7b8f5b8eba6d7e2eb1"
   version "0.1.0-dev"
   head "https://git.phin.tech/sam/barnyard.git", branch: "main"
 
-  depends_on "go" => :build
+  # `barnyard build` compiles each bundle's launcher and helpers with Go.
+  depends_on "go"
   depends_on :macos
 
   def install
     system "go", "build", *std_go_args(ldflags: "-X main.version=#{version}"), "./cmd/barnyard"
+    # `barnyard build` finds this source beside the binary; builds never write into it.
+    pkgshare.install %w[cmd internal extensions scripts docs examples third_party piglet.yaml go.mod go.sum
+                        README.md]
   end
 
   def caveats
     <<~EOS
-      Install PiG and nono separately. Barnyard uses their executables on PATH,
-      or explicit paths supplied with --pig and --nono. It never downloads or
-      upgrades them at launch. A source checkout and companion Piglet are not
-      required for ordinary use.
+      Barnyard builds signed, locked PiG agents from a nono profile:
+        barnyard keygen --out ~/.barnyard-signing/publisher.key
+        barnyard build --nono-profile my-agent.json \\
+          --sign-key ~/.barnyard-signing/publisher.key --out ./my-agent
 
-      Start with: barnyard --configure
-      Inspect the sandbox: barnyard --dry-run
+      Builds download the PiG and nono releases they bundle, so they need
+      network access. Start from #{opt_pkgshare}/examples/work-nono.json.
 
-      The initial formula is an experimental development version built from a
-      pinned source Git revision. Use --HEAD explicitly to follow main instead.
+      This is an experimental development version built from a pinned Git
+      revision. Use --HEAD explicitly to follow main instead.
     EOS
   end
 
   test do
     assert_match "barnyard ", shell_output("#{bin}/barnyard --version")
-    assert_match "Usage: barnyard", shell_output("#{bin}/barnyard --help")
-    ENV["PATH"] = "/usr/bin:/bin"
-    assert_match "PiG executable not found", shell_output("#{bin}/barnyard --yes 2>&1", 1)
+    assert_match "Usage: barnyard build", shell_output("#{bin}/barnyard --help 2>&1")
+    assert_path_exists pkgshare/"scripts/bundle.sh"
+    assert_match "--nono-profile is required", shell_output("#{bin}/barnyard build 2>&1", 1)
   end
 end
