@@ -1,6 +1,6 @@
 cask "fanfare" do
-  version "0.1.3"
-  sha256 "c1049de70eaa99486a6c3051c0edbc9c8e88d4533369aa448a2b19fc5ec25727"
+  version "0.1.4"
+  sha256 "ea7d61ca03479181738ddb65c5ddb8f2c930392371647d1ee3668015692843d7"
 
   url "https://github.com/phin-tech/releases/releases/download/fanfare-v#{version}/Fanfare-#{version}.zip"
   name "Fanfare"
