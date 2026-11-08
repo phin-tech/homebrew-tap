@@ -1,6 +1,6 @@
 cask "cubicle" do
-  version "0.1.0"
-  sha256 "50a478b5a0504af2393e78bbb109953c7a3bc07d2a648b526adc4bab97cc1b26"
+  version "0.1.1"
+  sha256 "38ccc4e695d4338359531bf4a8ca09d1159772a382414a84031901f0a5e6ee4d"
 
   url "https://github.com/phin-tech/cubicle/releases/download/v#{version}/Cubicle-#{version}.zip"
   name "Cubicle"
