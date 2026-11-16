@@ -1,11 +1,11 @@
 cask "welty" do
-  version "0.2.0"
-  sha256 "8888d6125b7c85028fa254611a44a83e74f1f1c2877454e4c226a01b70bce07a"
+  version "0.2.1"
+  sha256 "0e5146ee64f09f4cf96462f129f5fcc7965abe3c4c2bca87c9fc96f49bc7655a"
 
   url "https://github.com/phin-tech/releases/releases/download/welty-v#{version}/Welty-#{version}.zip"
   name "Welty"
   desc "A modern spiritual successor to Eudora: Fastmail and Gmail, local-first"
-  homepage "https://github.com/phin-tech/releases"
+  homepage "https://apps.phin.tech"
 
   livecheck do
     url :url
