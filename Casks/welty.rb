@@ -1,6 +1,6 @@
 cask "welty" do
-  version "0.2.1"
-  sha256 "0e5146ee64f09f4cf96462f129f5fcc7965abe3c4c2bca87c9fc96f49bc7655a"
+  version "0.2.2"
+  sha256 "121995f4429f20bcb0f92653a6872ea435e01d903906608a0e9bcaff73e5dbc0"
 
   url "https://github.com/phin-tech/releases/releases/download/welty-v#{version}/Welty-#{version}.zip"
   name "Welty"
