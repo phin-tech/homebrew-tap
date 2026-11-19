@@ -1,6 +1,6 @@
 cask "patchbay" do
-  version "0.2.1"
-  sha256 "0caef9a4bf64ce3dfeae2c694bb72da90ea04776fe5f64340a0d2ee7ed8ea26b"
+  version "0.2.2"
+  sha256 "7a07079de1e1f5dd8e673de3a280fc9b3e397a1bcb0a518b1e6e86452be4baa8"
 
   url "https://github.com/phin-tech/patchbay/releases/download/v#{version}/patchbay-#{version}.zip"
   name "Patchbay"
