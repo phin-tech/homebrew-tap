@@ -2,6 +2,20 @@
 
 Homebrew formulae for Phin Tech projects.
 
+## demoreel
+
+Product demo videos from code: scripted app recordings, floating screens, a pointer, key caps and narration, rendered
+with HyperFrames. Brings Node and ffmpeg with it:
+
+```sh
+brew install phin-tech/tap/demoreel
+# Or the latest from main:
+brew install --HEAD phin-tech/tap/demoreel
+```
+
+HyperFrames downloads its own Chrome the first time it renders. The install's notes say how to turn off HyperFrames'
+usage reports, and the folder to give [Booth](https://github.com/phin-tech/booth) for its Render.
+
 ## Whisk CLI
 
 Install the latest prerelease Whisk CLI on a local or remote macOS/Linux machine:
