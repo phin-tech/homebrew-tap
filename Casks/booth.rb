@@ -1,6 +1,6 @@
 cask "booth" do
-  version "0.2.0"
-  sha256 "d931b87c1d29aeda9e694b3038bc42a45ad6bb3f6bb8a3ff840fea9651df3a7e"
+  version "0.2.1"
+  sha256 "8b76dc319997a779a8061e22a0384a508eaadd261bc3590dacb914073d17aaeb"
 
   url "https://github.com/phin-tech/booth/releases/download/v#{version}/Booth-#{version}.zip"
   name "Booth"
