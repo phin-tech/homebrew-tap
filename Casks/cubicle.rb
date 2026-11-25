@@ -1,10 +1,10 @@
 cask "cubicle" do
-  version "0.2.0"
-  sha256 "010bee15fd6248eeffa62e81cd9002528888581703fac9ad81a896b2eee9596e"
+  version "0.3.0"
+  sha256 "0f6edd49829028770ba448e0f3ba389acab32c2c2a7f65489da43302ab955262"
 
   url "https://github.com/phin-tech/cubicle/releases/download/v#{version}/Cubicle-#{version}.zip"
   name "Cubicle"
-  desc "Instant, named, searchable Spaces for macOS"
+  desc "Instant, named, searchable workspaces for macOS"
   homepage "https://github.com/phin-tech/cubicle"
 
   livecheck do
