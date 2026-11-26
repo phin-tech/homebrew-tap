@@ -1,6 +1,6 @@
 cask "lazysusan" do
-  version "0.0.1"
-  sha256 "c40463e3485e87c6bdde6696ebc170cfacabb55fff009bdedd5a4c7e54324377"
+  version "0.0.2"
+  sha256 "24985be6eebf3f4f32ab64c13b248196efad6f5cf7c864d36e9140809054b21f"
 
   url "https://github.com/phin-tech/lazy-susan/releases/download/v#{version}/LazySusan-#{version}.zip"
   name "Lazy Susan"
