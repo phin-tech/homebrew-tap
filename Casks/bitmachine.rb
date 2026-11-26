@@ -1,6 +1,6 @@
 cask "bitmachine" do
-  version "0.2.4"
-  sha256 "b3456b7af449d24980b312be3bd9854c792fbb6257c7356503a749a1e3cee9a9"
+  version "0.2.5"
+  sha256 "6f68cdbedff76c4878e051e91934cbdc8c6c54535674a01630a5b5d8931dc2c7"
 
   url "https://github.com/phin-tech/bitmachine/releases/download/v#{version}/BitMachine-#{version}.zip"
   name "BitMachine"
